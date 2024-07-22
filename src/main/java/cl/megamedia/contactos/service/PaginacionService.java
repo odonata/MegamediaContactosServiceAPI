@@ -1,4 +1,4 @@
-package cl.megamedia.contactos.dao;
+package cl.megamedia.contactos.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

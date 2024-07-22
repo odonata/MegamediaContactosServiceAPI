@@ -15,8 +15,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import cl.megamedia.contactos.constantes.Constantes;
-import cl.megamedia.contactos.dao.AreaService;
-import cl.megamedia.contactos.dao.PaginacionService;
+import cl.megamedia.contactos.service.AreaService;
+import cl.megamedia.contactos.service.PaginacionService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

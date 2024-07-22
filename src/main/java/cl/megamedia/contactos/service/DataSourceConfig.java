@@ -1,4 +1,4 @@
-package cl.megamedia.contactos.dao;
+package cl.megamedia.contactos.service;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
