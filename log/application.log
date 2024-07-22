@@ -1,0 +1,45 @@
+20:36:01.839 [main] INFO  c.k.swaggerapi.KioskoPayService - sistema operativo :Mac OS X
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.wlan-debug
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.wlan-debug
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.JBLGO
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.JBLGO
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.Bluetooth-Incoming-Port
+20:36:02.062 [main] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.Bluetooth-Incoming-Port
+20:36:02.527 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - sistema operativo :Mac OS X
+20:36:02.527 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.wlan-debug
+20:36:02.527 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.wlan-debug
+20:36:02.527 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.JBLGO
+20:36:02.528 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.JBLGO
+20:36:02.528 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.Bluetooth-Incoming-Port
+20:36:02.528 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.Bluetooth-Incoming-Port
+20:36:02.853 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - Starting KioskoPayService on flowcollectives-MacBook-Pro.local with PID 9160 (/Users/flowcollective/Documents/DESARROLLO/WorkSpaces/KLioskoPay/KioskoPayService/target/classes started by flowcollective in /Users/flowcollective/Documents/DESARROLLO/WorkSpaces/KLioskoPay/KioskoPayService)
+20:36:02.854 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - No active profile set, falling back to default profiles: default
+20:36:02.907 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+20:36:02.908 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+20:36:03.717 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:36:03.730 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:36:03.730 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:36:03.730 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+20:36:03.772 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:36:03.772 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 864 ms
+20:36:04.105 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:36:04.157 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:36:04.207 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+20:36:04.232 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+20:36:04.291 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:36:04.307 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:36:04.308 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+20:36:04.324 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+20:36:04.348 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+20:36:04.494 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - Started KioskoPayService in 1.882 seconds (JVM running for 2.932)
+20:36:04.496 [restartedMain] INFO  c.k.s.s.KioskoPayContextSingleton - Iniciando el servicio desde el singleton
+20:36:04.496 [restartedMain] INFO  c.k.s.s.KioskoPayContextSingleton - entregando el cobntexto
+20:36:04.497 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - Puerto de busqueda : cu.usbmodem1401
+20:37:44.877 [Thread-6] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - sistema operativo :Mac OS X
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.wlan-debug
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.wlan-debug
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.JBLGO
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.JBLGO
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : cu.Bluetooth-Incoming-Port
+20:37:44.951 [restartedMain] INFO  c.k.swaggerapi.KioskoPayService - > puertos : tty.Bluetooth-Incoming-Port
