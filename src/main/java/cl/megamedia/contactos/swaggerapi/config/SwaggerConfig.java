@@ -40,8 +40,8 @@ public class SwaggerConfig {
 				"MegaMedia Contactos  Service API",
 				"Descripcion",
 				"1.0",
-				"http://www.megamedia.cl/terms",
-				new Contact("Gonzalo Silva", "https://www.megamedia.cl", "gonzalo.silva.pereira@gmail.com"),
+				"https://github.com/odonata?tab=repositories",
+				new Contact("Gonzalo Silva", "https://github.com/odonata?tab=repositories", "gonzalo.silva.pereira@gmail.com"),
 				"LICENSE",
 				"LICENSE URL",
 				Collections.emptyList()

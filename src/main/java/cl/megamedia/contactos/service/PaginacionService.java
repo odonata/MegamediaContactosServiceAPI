@@ -38,9 +38,9 @@ public class PaginacionService {
 
     // llamar a función get_areas_paginadas (pagina, numero de registros por pagina , campo de busqueda )
     // el campo de búsqueda puede ser vacio o contener una cadena, la busqueda se hace sobre el campo nombre_area
-    public PaginatedResult<Area> getAreasPaginadas(int numeroPagina, int registrosPorPagina, String busqueda) throws Exception {
-        String sql = "SELECT * FROM get_areas_paginadas(?, ?, ?)";
-        Map<String, Object> result = jdbcTemplate.queryForMap(sql, numeroPagina, registrosPorPagina, busqueda);
+    public PaginatedResult<Area> getAreasPaginadas(int numeroPagina, int registrosPorPagina, String busqueda, String tipoBusqueda) throws Exception {
+        String sql = "SELECT * FROM get_areas_paginadas(?, ?, ?, ?)";
+        Map<String, Object> result = jdbcTemplate.queryForMap(sql, numeroPagina, registrosPorPagina, busqueda, tipoBusqueda);
 
         return mapToPaginatedResult(result, Area.class);
     }
@@ -48,9 +48,9 @@ public class PaginacionService {
     // llamar a función get_clientes_paginados (pagina, numero de registros por pagina , campo de busqueda )
     // el campo de búsqueda puede ser vacio o contener una cadena, la busqueda se hace sobre el campo nombre_cliente
 
-    public PaginatedResult<Cliente> getClientesPaginados(int numeroPagina, int registrosPorPagina, String busqueda) throws Exception {
-        String sql = "SELECT * FROM get_clientes_paginados(?, ?, ?)";
-        Map<String, Object> result = jdbcTemplate.queryForMap(sql, numeroPagina, registrosPorPagina, busqueda);
+    public PaginatedResult<Cliente> getClientesPaginados(int numeroPagina, int registrosPorPagina, String busqueda, String tipoBusqueda) throws Exception {
+        String sql = "SELECT * FROM get_clientes_paginados(?, ?, ?, ?)";
+        Map<String, Object> result = jdbcTemplate.queryForMap(sql, numeroPagina, registrosPorPagina, busqueda,tipoBusqueda);
 
         return mapToPaginatedResult(result, Cliente.class);
     }

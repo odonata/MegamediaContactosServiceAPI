@@ -39,4 +39,9 @@ public class AreaService {
         String sql = "SELECT * FROM get_areas()";
         return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Area.class));
     }
+    
+    // llamar a la funcion de actualizacion de area: update_area
+    public void updateArea(int areaId, String nombreArea, String usuario) {
+        jdbcTemplate.update("CALL update_area(?, ?, ?)", areaId, nombreArea, usuario);
+    }
 }
