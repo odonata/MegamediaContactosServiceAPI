@@ -14,6 +14,9 @@ public class Cliente {
     
     @JsonProperty("area_id")
     private int areaId;
+
+    @JsonProperty("nombre_area")
+    private String nombreArea;
     
     @JsonProperty("nombre_cliente")
     private String nombreCliente;
@@ -78,6 +81,12 @@ public class Cliente {
 	}
 	public void setUsuario(String usuario) {
 		this.usuario = usuario;
+	}
+	public String getNombreArea() {
+		return nombreArea;
+	}
+	public void setNombreArea(String nombreArea) {
+		this.nombreArea = nombreArea;
 	}
     
     

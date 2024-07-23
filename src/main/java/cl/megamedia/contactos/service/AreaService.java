@@ -1,11 +1,16 @@
 package cl.megamedia.contactos.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
+import cl.megamedia.contactos.to.Area;
+
 /**
- * Esta clase permite elimimnar un área de negocio
+ * Clase de servicios de base de datoas para la tabla Area 
  * 
  * @author Gonzalo Silva
  *
@@ -17,9 +22,21 @@ public class AreaService {
     private JdbcTemplate jdbcTemplate;
 
 
-    // borrar el área
+    // Borrar el área
     public void deleteArea(int areaId) {
-        String sql = "SELECT delete_area(?)";
+        String sql = "CALL delete_area(?)";
         jdbcTemplate.update(sql, areaId);
+    }
+    
+    // Crear un área
+    public void createArea(Area area) {
+        String sql = "CALL create_area(?, ?)";
+        jdbcTemplate.update(sql, area.getNombre(), area.getUsuario());
+    }
+    
+    // Llamada a la función get_areas
+    public List<Area> getAreas() {
+        String sql = "SELECT * FROM get_areas()";
+        return jdbcTemplate.query(sql, new BeanPropertyRowMapper<>(Area.class));
     }
 }

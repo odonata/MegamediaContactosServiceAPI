@@ -3,7 +3,10 @@ package cl.megamedia.contactos.to;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Representa los datos de Area de negocio que agrupan a los clientes
+ * Clase para Transporte de Datos de Area de negocio 
+ * que serán consultados, creados, borrados o actualizados 
+ * via funciones de db en postgres
+ * 
  * @author Gonzalo Silva
  *
  */
