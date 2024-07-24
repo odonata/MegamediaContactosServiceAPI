@@ -9,8 +9,17 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * Inicializacion del servicioo API REST
+ * @author Gonzalo Silva P:
+ *
+ */
 @SpringBootApplication
-@ComponentScan(basePackages = "cl.megamedia.contactos") 
+@ComponentScan(basePackages = {
+	    "cl.megamedia.contactos",
+	    "cl.megamedia.contactos.swaggerapi",
+	    "cl.megamedia.contactos.security"
+	})
 public class MegaMediaContactosService {
 
 	private static 				ConfigurableApplicationContext context;

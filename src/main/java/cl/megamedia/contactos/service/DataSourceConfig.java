@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.web.client.RestTemplate;
+
 import javax.sql.DataSource;
 
 /**
@@ -26,4 +28,8 @@ public class DataSourceConfig {
         return new JdbcTemplate(dataSource);
     }
 	
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

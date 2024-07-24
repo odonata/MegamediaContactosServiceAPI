@@ -21,6 +21,14 @@
 	</properties>
 
 	<dependencies>
+		
+		<!-- jfreechart -->
+		<dependency>
+		    <groupId>org.jfree</groupId>
+		    <artifactId>jfreechart</artifactId>
+		    <version>1.5.3</version>
+		</dependency>
+	
 	    <!-- PostgreSQL JDBC Driver -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -34,12 +42,6 @@
 		    <version>1.2.0</version>
 		</dependency>
 		
-		<!-- Transbank SDK -->
-		<dependency>
-			<groupId>com.github.transbankdevelopers</groupId>
-			<artifactId>transbank-sdk-pos-java</artifactId>
-			<version>3.1.0</version>
-		</dependency>
 
 		<!-- Spring Boot Starter Web -->
 		<dependency>
@@ -78,6 +80,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.18.24</version> 
+    		<scope>provided</scope>
 		</dependency>
 		
 		<!-- Jackson Parameter Names -->

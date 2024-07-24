@@ -9,7 +9,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,8 +25,10 @@ import cl.megamedia.contactos.constantes.Constantes;
 import cl.megamedia.contactos.service.AreaService;
 import cl.megamedia.contactos.service.ClienteService;
 import cl.megamedia.contactos.service.PaginacionService;
+import cl.megamedia.contactos.service.TiempoService;
 import cl.megamedia.contactos.to.Area;
 import cl.megamedia.contactos.to.Cliente;
+import cl.megamedia.contactos.to.EstadoDelClimaResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +39,7 @@ import org.slf4j.LoggerFactory;
  *
  */
 @RestController
+@CrossOrigin(origins = "http://localhost:8000")
 public class MegaMediaContactosController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(MegaMediaContactosController.class);
@@ -47,6 +53,8 @@ public class MegaMediaContactosController {
 	@Autowired
     private ClienteService clienteService;
 	
+    @Autowired
+    private TiempoService tiempoService;
 	
 	/**
 	 * Obtiene todas las areas de forma paginada
@@ -345,6 +353,28 @@ public class MegaMediaContactosController {
         }
     }
 	
+    
+
+    /**
+     * Obtener json del estado del clima
+     * @param ciudad
+     * @return
+     */
+    @CrossOrigin(origins = "*")
+    @GetMapping("/estadoDelClima")
+    public ResponseEntity<EstadoDelClimaResponse> getGraficoTiempo(@RequestParam("ciudad") String ciudad) {
+        EstadoDelClimaResponse response = tiempoService.generarGrafico(ciudad);
+        if (response != null) {
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(org.springframework.http.MediaType.APPLICATION_JSON);
+
+            return new ResponseEntity<>(response, headers, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    
+    
     /**
      * Buscar dentro del stack trace , solo durante desarrollo
      * @param throwable
